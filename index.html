@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <title>Money calculator</title>
+</head>
+<body>
+    <div class="container"><br><br>
+        <h2> DEPRICIATION/APPRECIATION CALCULATOR </h2>
+            <ul class="list-group">
+                <li class="list-group-item"> <b> Year of which value is known:  </b> </li>
+                <input type="number" placeholder='' name="" id="known-value-year" >
+                <li class="list-group-item"> <b> Amount of money in that year:  </b> </li>
+                <input type="number" placeholder='' name="" id="known-money-amount">
+                <li class="list-group-item"> <b> Decrement percent per year:  </b> </li>
+                <input type="number" placeholder='' name="" id="dec-perc">
+                <li class="list-group-item"> <b> Year of which you need to find th value: </b> </li>
+                <input type="number" placeholder='' name="" id="need-value-year">
+            </ul>
+              <br><br>
+              <div class="flex">
+                <button class="btn btn-primary" onclick="moneyinyear()" >click me</button>
+                <button class="btn btn-danger ml-5" onclick="reset()">reset</button>
+              </div><br>
+              <div class="flex-box-container-1">
+                <div id="flex-box-result"></div>
+            </div>
+              
+
+             
+         
+       
+    </div>
+    <script src="new.js"></script>
+</body>
+</html>
